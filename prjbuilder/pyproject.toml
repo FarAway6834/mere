@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools", "cython"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "__init__"
+version = "0.42"
+
+[tool.setuptools]
+ext-modules = [
+  {name = "__init__", sources = ["__init__.pyx"]}
+]
